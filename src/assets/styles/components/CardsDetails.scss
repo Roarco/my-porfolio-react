@@ -15,14 +15,14 @@
 }
 
 .card_title {
-	color: black;
+	color: white;
     font-weight: bold;
 	font-size: 18px;
 	margin: 0
 }
 
 .card_value {
-	color: black;
+	color: white;
     font-weight: bold;
 	font-size: 38px;
 	margin: 5px;
@@ -38,7 +38,7 @@
  .circle {
 	position: relative;
 	background:transparent;
-	border: 3px solid;
+	border: 3px solid #eed09d;
   }
 
   .circle svg {
@@ -59,7 +59,7 @@
   }
   @keyframes stroke-draw {
 	from {
-	  stroke:rgb(156, 8, 8);
+	  stroke:white;
 	  stroke-dasharray: 1;
 	}
 	to {
