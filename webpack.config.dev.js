@@ -5,6 +5,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssEstractPlugin = require('mini-css-extract-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 /* creamos un nuevo modulo que vamos a exportar con esta configuracion */
 
@@ -52,7 +53,7 @@ module.exports = {
         use: {
           loader: 'file-loader',
           options: {
-            name: 'assets/images/[hash].[ext]',
+            name: 'assets/images/[name].[ext]',
           },
         },
       },
@@ -66,7 +67,16 @@ module.exports = {
       filename: './index.html',
     }),
     new MiniCssEstractPlugin({
-      filename: 'assets/styles/components/[name].css',
+      filename: 'assets/styles/[name].css',
+    }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, 'src', 'assets/images'),
+          to: 'assets/images',
+
+        },
+      ],
     }),
   ],
 

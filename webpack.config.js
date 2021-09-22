@@ -54,7 +54,7 @@ module.exports = {
         use: {
           loader: 'file-loader',
           options: {
-            name: 'assets/images/[hash].[ext]',
+            name: 'assets/images/[name].[ext]',
           },
         },
       },
@@ -68,7 +68,7 @@ module.exports = {
       filename: './index.html',
     }),
     new MiniCssEstractPlugin({
-      filename: 'assets/styles/components/[name].css',
+      filename: 'assets/styles/[name].css',
     }),
     new CleanWebpackPlugin(),
   ],
