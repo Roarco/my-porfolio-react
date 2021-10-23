@@ -4,12 +4,13 @@ react */
 
 import React from 'react';
 import '../assets/styles/components/About.scss';
+import Card from './Card';
 
 /* crearemos componentes presentacionales, con un return explicito*/
 
-const About = ({ children }) => (
+const About = () => (
   <div className='About'>
-    {children}
+    <Card />
   </div>
 );
 

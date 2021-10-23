@@ -4,7 +4,7 @@ componetes o archivos que requiera nuesta aplicacion.
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './containers/App';
+import App from './page/App';
 
 /* con ReactDOM.render empujamos el componente al html */
 

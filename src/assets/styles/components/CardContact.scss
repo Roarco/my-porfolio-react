@@ -1,0 +1,34 @@
+.CardContact{
+  display: flex;
+  justify-content: space-between;
+}
+.CardContact--item1{
+  background-color:#1f294f;
+  margin-right: 10px;
+  width: 50%;
+  margin-right: 3px;
+}
+.CardContact--item2{
+  background-color:#1f294f;
+  margin-right: 10px;
+  margin: 0px;
+  width: 50%;
+}
+.CardContact__h3{
+  color: aliceblue;
+  text-align: center;
+  font-size: 15px;
+}
+.CardContact__a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .CardContact__h3{
+    color: aliceblue;
+    text-align: center;
+    font-size: 13px;
+    padding-left: 19px;
+    padding-right: 17px;
+}
+}

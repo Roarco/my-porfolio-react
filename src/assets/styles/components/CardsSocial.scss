@@ -1,16 +1,18 @@
-.card_social {
-	width: 400px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: 0 auto;
-	padding: 1em 0;
+.CardsSocial {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
 }
-
-.card_social img {
-	width: 32px;
-	height: 32px;
+.CardsSocial img {
+    width: 36px;
+    height: 36px;
 }
-.card_social a {
-	text-decoration: none;
+@media only screen and (max-width: 600px) {
+	.CardsSocial {
+		width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 27px;
+	}
 }
